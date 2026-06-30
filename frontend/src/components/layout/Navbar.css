@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 60px;
+  background-color: #2563eb;
+}
+
+.logo {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.nav-links,
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-links a,
+.auth-buttons a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.auth-buttons a:hover {
+  color: #ffd54f;
+}

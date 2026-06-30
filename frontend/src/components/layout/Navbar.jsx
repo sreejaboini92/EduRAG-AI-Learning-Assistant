@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav>
-      <h2>EduRAG</h2>
+    <nav className="navbar">
+      <h2 className="logo">EduRAG</h2>
 
-      <Link to="/">Home</Link>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/chat">Chat</Link>
+        <Link to="/quiz">Quiz</Link>
+        <Link to="/profile">Profile</Link>
+      </div>
 
-      <Link to="/login">Login</Link>
-
-      <Link to="/dashboard">Dashboard</Link>
-
-      <Link to="/chat">Chat</Link>
-
-      <Link to="/quiz">Quiz</Link>
-
-      <Link to="/profile">Profile</Link>
+      <div className="auth-buttons">
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Signup</Link>
+      </div>
     </nav>
   );
 }
